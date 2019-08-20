@@ -13,6 +13,5 @@ releases/**/*.tgz
 *#
 #*
 tmp/
-
-
 ci-old
+src/**/*.tar.gz
