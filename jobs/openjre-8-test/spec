@@ -1,0 +1,7 @@
+---
+name: openjre-8-test
+templates:
+  run: bin/run
+packages:
+- openjre-8
+properties: {}
