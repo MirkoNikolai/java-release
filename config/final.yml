@@ -2,4 +2,4 @@ name: java
 blobstore:
   provider: s3
   options:
-    bucket_name: bosh-packages-java-release
+    bucket_name: bosh-packages-java-release-blob
