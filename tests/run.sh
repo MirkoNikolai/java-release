@@ -6,8 +6,8 @@ script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 build_dir="${script_dir}/../.."
 stemcell="${build_dir}/stemcell/stemcell.tgz"
 
-echo "-----> $(date): Uploading stemcell"
-bosh -n upload-stemcell "${stemcell}"
+#echo "-----> $(date): Uploading stemcell"
+#bosh -n upload-stemcell "${stemcell}"
 
 echo "-----> `date`: Delete previous deployment"
 bosh -n -d test delete-deployment --force
@@ -17,7 +17,11 @@ echo "-----> `date`: Deploy"
 ( set -e; cd ..; bosh -n -d test deploy ./manifests/test.yml )
 
 echo "-----> `date`: Run test errand"
-bosh -n -d test run-errand openjdk-test
+bosh -n -d test run-errand openjdk11-test
+bosh -n -d test run-errand openjre11-test
+bosh -n -d test run-errand openjdk8-test
+bosh -n -d test run-errand openjre8-test
+
 #bosh -n -d test run-errand openjdk-jdk-test
 
 echo "-----> `date`: Delete deployments"
