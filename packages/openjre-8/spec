@@ -1,0 +1,6 @@
+---
+name: openjre-8
+dependencies: []
+files:
+- openjre-8/runtime.env
+- openjre-8/OpenJDK8U-jre_x64_linux_hotspot_8u222b10.tar.gz

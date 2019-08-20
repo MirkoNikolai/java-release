@@ -1,0 +1,9 @@
+set -ex
+mkdir -p ${BOSH_INSTALL_TARGET}/bosh
+cp openjre-8/runtime.env ${BOSH_INSTALL_TARGET}/bosh/runtime.env
+
+mkdir ${BOSH_INSTALL_TARGET}/jre 
+tar xf openjre-8/OpenJDK8U-jre*.tar.gz --strip 1 -C ${BOSH_INSTALL_TARGET}/jre
+
+# latest JRE release didn't have correct permissions
+chmod -R a+r ${BOSH_INSTALL_TARGET}/jre

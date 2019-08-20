@@ -1,11 +1,10 @@
 set -ex
-mkdir ${BOSH_INSTALL_TARGET}/bosh
+mkdir -p ${BOSH_INSTALL_TARGET}/bosh
 cp openjdk-11/runtime.env ${BOSH_INSTALL_TARGET}/bosh/runtime.env
 cp openjdk-11/compile.env ${BOSH_INSTALL_TARGET}/bosh/compile.env
 
-cd ${BOSH_INSTALL_TARGET}
-mkdir jre
-tar zxvf ${BOSH_COMPILE_TARGET}/*.tar.gz --strip 1 -C jre
+mkdir ${BOSH_INSTALL_TARGET}/jdk
+tar xf openjdk-11/OpenJDK11U-jdk*.tar.gz --strip 1 -C ${BOSH_INSTALL_TARGET}/jdk
 
-# latest JRE release didn't have correct permissions
-chmod -R a+r jre
+# latest jdk release didn't have correct permissions
+chmod -R a+r ${BOSH_INSTALL_TARGET}/jdk
