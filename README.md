@@ -15,6 +15,8 @@ Included packages:
 - openjre-11
 - openjre-8
 
+All packages use the AdoptOpenJDK provided tar.gz files. 
+
 To use `openjdk-*` package for compilation in your packaging script:
 
 ```bash
