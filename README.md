@@ -3,9 +3,9 @@
 To vendor java package into your release, run:
 
 ```
-$ git clone https://github.com/bosh-packages/java-release
+$ git clone https://github.com/MirkoNikolai/java-release
 $ cd ~/workspace/your-release
-$ bosh vendor-package openjdk-9 ~/workspace/java-release
+$ bosh vendor-package openjre-11 ~/workspace/java-release
 ```
 
 Included packages:
