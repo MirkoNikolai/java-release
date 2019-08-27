@@ -12,6 +12,8 @@ Included packages:
 
 - openjdk-11
 - openjdk-8
+- openjre-11
+- openjre-8
 
 To use `openjdk-*` package for compilation in your packaging script:
 
@@ -21,15 +23,15 @@ source /var/vcap/packages/openjdk-9/bosh/compile.env
 java ...
 ```
 
-To use `openjdk-*` package at runtime in your job scripts:
+To use `openjre-*` package at runtime in your job scripts:
 
 ```bash
 #!/bin/bash -eu
-source /var/vcap/packages/openjdk-9/bosh/runtime.env
+source /var/vcap/packages/openjdk-8/bosh/runtime.env
 java ...
 ```
 
-See [jobs/openjdk-8-test](jobs/openjdk-8-test) for example.
+See [jobs/openjdk-8-test](jobs/openjre-8-test) for example.
 
 ## Development
 
