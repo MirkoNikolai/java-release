@@ -4,4 +4,4 @@ dependencies: []
 files:
 - openjdk-8/compile.env
 - openjdk-8/runtime.env
-- openjdk-8/OpenJDK8U-jdk_x64_linux_hotspot_8u222b10.tar.gz
+- openjdk-8/OpenJDK8U-jdk_x64_linux_hotspot_8u232b09.tar.gz
