@@ -1,0 +1,12 @@
+openjdk-8/OpenJDK8U-jdk_x64_linux_hotspot_8u232b09.tar.gz:
+  size: 104521598
+  sha: sha256:7b7884f2eb2ba2d47f4c0bf3bb1a2a95b73a3a7734bd47ebf9798483a7bcc423
+openjdk-11/OpenJDK11U-jdk_x64_linux_hotspot_11.0.5_10.tar.gz:
+  size: 196955466
+  sha: sha256:6dd0c9c8a740e6c19149e98034fba8e368fd9aa16ab417aa636854d40db1a161
+openjre-8/OpenJDK8U-jre_x64_linux_hotspot_8u232b09.tar.gz:
+  size: 40963409
+  sha: sha256:bd06b84a1fc10e0a555431bc49a84e86df45de0be93c8ee4d09d13513219843b
+openjre-11/OpenJDK11U-jre_x64_linux_hotspot_11.0.5_10.tar.gz:
+  size: 42132415
+  sha: sha256:2f08c469c9a8adea1b6ee3444ba2a8242a7e99d87976a077faf037a9eb7f884b
